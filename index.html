@@ -1,52 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <script src="./JS/myscript.js"></script>
     <h1>Netflix</h1>
-    <!--Introduce nombre-->
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre"><br><br>
+    <form name="formulario">
+        <!--Introduce nombre-->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" size="30" maxlength="100"><br><br>
 
-    <!--Introduce primer apellido-->
-    <label for="ape1">Primer Apellido:</label><br>
-    <input type="text" id="ape1" name="ape1"><br><br>
-    
-    <!--Introduce segundo apellido-->
-    <label for="ape2">Segundo Apellido:</label><br>
-    <input type="text" id="ape2" name="ape2"><br><br>
-    
-    <!--Introduce correo electrónico-->
-    <label for="correo">Correo electrónico</label><br>
-    <input type="text" id="correo" name="correo"><br><br>
+        <!--Introduce primer apellido-->
+        <label for="ape1">Primer Apellido:</label><br>
+        <input type="text" id="ape1" name="ape1" size="30" maxlength="100"><br><br>
+        
+        <!--Introduce segundo apellido-->
+        <label for="ape2">Segundo Apellido:</label><br>
+        <input type="text" id="ape2" name="ape2" size="30" maxlength="100"><br><br>
+        
+        <!--Introduce correo electrónico-->
+        <label for="correo">Correo electrónico</label><br>
+        <input type="text" id="correo" name="correo">
+        <p>El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p><br>
 
-    <!--Introduce teléfono-->
-    <label for="tlf">Teléfono:</label><br>
-    <input type="text" id="tlf" name="tlf"><br><br>
-    
-    <!--Introduce DNI-->
-    <label for="DNI">DNI:</label><br>
-    <input type="text" id="DNI" name="DNI"><br><br>
-    
-    <!--Introduce IBAN-->
-    <label for="IBAN">IBAN:</label><br>
-    <input type="text" id="IBAN" name="IBAN"><br><br>
+        <!--Introduce teléfono-->
+        <label for="tlf">Teléfono:</label><br>
+        <input type="text" id="tlf" name="tlf">
+        <p>El número de teléfono solo puede contener nueve números en formato 999 999 999 o 999 99 99 99</p><br>
+        
+        <!--Introduce DNI-->
+        <label for="DNI">DNI:</label><br>
+        <input type="text" id="DNI" name="DNI">
+        <p>Tiene que contener ocho dígitos y una letra</p><br><br>
+        
+        <!--Introduce IBAN-->
+        <label for="IBAN">IBAN:</label><br>
+        <input type="text" id="IBAN" name="IBAN"><br><br>
 
-    <!--Introduce swift-->
-    <label for="Swift">Swift:</label><br>
-    <input type="text" id="Swift" name="Swift"><br><br>
-    
-    <!--Introduce nombre de usuario-->
-    <label for="usuario">Nombre de usuario:</label><br>
-    <input type="text" id="usuario" name="usuario"><br><br>
+        <!--Introduce swift-->
+        <label for="Swift">Swift:</label><br>
+        <input type="text" id="Swift" name="Swift"><br><br>
+        
+        <!--Introduce nombre de usuario-->
+        <label for="usuario">Nombre de usuario:</label><br>
+        <input type="text" id="usuario" name="usuario"><br><br>
 
-    <!--Introduce fecha de nacimiento-->
-    <label for="nacimiento">Fecha de nacimiento:</label><br>
-    <input type="text" id="nacimiento" name="nacimiento"><br><br>
-    
+        <!--Introduce fecha de nacimiento-->
+        <label for="nacimiento">Fecha de nacimiento:</label><br>
+        <input type="text" id="nacimiento" name="nacimiento"><br><br>
+        
+        <!--Botón de enviar-->
+        <input type="submit" id="envio" value="Enviar" onclick="valida_envia()">
+    </form>
 </body>
 </html>
